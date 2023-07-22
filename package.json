@@ -10,7 +10,7 @@
     "build": "npx tsc",
     "lint": "npx eslint src/*",
     "prettier": "npx prettier --check '**/*.ts*'",
-    "prettier-write": "npx prettier --check --write '**/*.ts*'"
+    "prettier:write": "npx prettier --check --write '**/*.ts*'"
   },
   "devDependencies": {
     "@types/node": "^20.4.3",
