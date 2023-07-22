@@ -1,3 +1,9 @@
+export type GhostfolioApi = (
+  accessToken: string,
+  host?: string,
+  port?: number,
+) => { importData: (requestBody: ImportRequestBody) => Promise<void> };
+
 export type AuthResponseData = {
   authToken: string;
 };

@@ -1,7 +1,7 @@
 import axios, { AxiosResponse } from 'axios';
-import { AuthResponseData, ImportRequestBody } from './types';
+import { AuthResponseData, GhostfolioApi, ImportRequestBody } from './types';
 
-const GhostfolioApi = (
+const ghostfolioApi: GhostfolioApi = (
   accessToken: string,
   host: string = '127.0.0.1',
   port: number = 3333,
@@ -40,4 +40,4 @@ const GhostfolioApi = (
   return { importData };
 };
 
-export default GhostfolioApi;
+export default ghostfolioApi;
