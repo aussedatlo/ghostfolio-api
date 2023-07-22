@@ -7,12 +7,16 @@
   "author": "aussedatlo",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
-    "prettier": "prettier --check '**/*.ts*'",
-    "prettier-write": "prettier --check --write '**/*.ts*'"
+    "build": "npx tsc",
+    "lint": "npx eslint src/*",
+    "prettier": "npx prettier --check '**/*.ts*'",
+    "prettier-write": "npx prettier --check --write '**/*.ts*'"
   },
   "devDependencies": {
     "@types/node": "^20.4.3",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint": "^8.45.0",
     "prettier": "3.0.0",
     "typescript": "^5.1.6"
   },

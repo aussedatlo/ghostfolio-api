@@ -11,38 +11,30 @@ const GhostfolioApi = (
   const _getBearerToken = async () => {
     const url = `http://${host}:${port}/api/v1/auth/anonymous`;
 
-    try {
-      const response: AxiosResponse<AuthResponseData> = await axios.post(
-        url,
-        `accessToken=${accessToken}`,
-        {
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-          },
+    const response: AxiosResponse<AuthResponseData> = await axios.post(
+      url,
+      `accessToken=${accessToken}`,
+      {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
         },
-      );
+      },
+    );
 
-      return response.data.authToken;
-    } catch (error: any) {
-      throw error;
-    }
+    return response.data.authToken;
   };
 
   const importData = async (requestBody: ImportRequestBody) => {
-    if (!bearerToken) bearerToken = await _getBearerToken();
-
     const url = `http://${host}:${port}/api/v1/import`;
 
-    try {
-      const response: AxiosResponse = await axios.post(url, requestBody, {
-        headers: {
-          Authorization: `Bearer ${bearerToken}`,
-          'Content-Type': 'application/json',
-        },
-      });
-    } catch (error: any) {
-      throw error;
-    }
+    if (!bearerToken) bearerToken = await _getBearerToken();
+
+    await axios.post(url, requestBody, {
+      headers: {
+        Authorization: `Bearer ${bearerToken}`,
+        'Content-Type': 'application/json',
+      },
+    });
   };
 
   return { importData };
