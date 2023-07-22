@@ -1,0 +1,22 @@
+{
+  "name": "ghostolio-api",
+  "version": "1.0.0",
+  "description": "nodejs api for ghostfolio",
+  "main": "src/index.ts",
+  "repository": "github.com/aussedatlo/ghostfolio-api",
+  "author": "aussedatlo",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prettier": "prettier --check '**/*.ts*'",
+    "prettier-write": "prettier --check --write '**/*.ts*'"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.3",
+    "prettier": "3.0.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
