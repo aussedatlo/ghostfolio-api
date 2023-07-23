@@ -10,7 +10,7 @@ export type AuthResponseData = {
 
 export type Activity = {
   currency: string;
-  dataSource: string;
+  dataSource?: string;
   date: string;
   fee: number;
   quantity: number;
