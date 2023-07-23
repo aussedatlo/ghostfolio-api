@@ -1,14 +1,22 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
-    "target": "es2016",
-    "lib": ["ES6", "DOM"],
+    "allowJs": true,
+    "target": "es6",
     "module": "commonjs",
-    "rootDirs": ["src", "data"],
-    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "declaration": true,
+    "removeComments": false,
+    "noEmitOnError": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
     "esModuleInterop": true,
-    "outDir": "./bin",
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true
-  }
+    "lib": ["es2021", "dom"],
+    "baseUrl": ".",
+    "outDir": "lib"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "**/node_modules/*", "coverage", "doc"]
 }

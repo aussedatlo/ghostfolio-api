@@ -1,11 +1,14 @@
 {
-  "name": "ghostolio-api",
+  "name": "ghostfolio-api",
   "version": "1.0.0",
   "description": "nodejs api for ghostfolio",
-  "main": "src/index.ts",
   "repository": "github.com/aussedatlo/ghostfolio-api",
   "author": "aussedatlo",
   "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "/lib"
+  ],
   "scripts": {
     "build": "npx tsc",
     "lint": "npx eslint src/*",
