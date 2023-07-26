@@ -17,6 +17,7 @@ export type Activity = {
   symbol: string;
   type: string;
   unitPrice: number;
+  accountId?: string;
 };
 
 export type ImportRequestBody = {
