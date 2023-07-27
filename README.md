@@ -1,6 +1,6 @@
 # Ghostfolio API
 
-:point_right: Node.js/Typescript library to import datas throught Ghostfolio. :point_left:
+:point_right: Node.js/Typescript library to import data through Ghostfolio. :point_left:
 
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/aussedatlo/ghostfolio-api.svg)](http://isitmaintained.com/project/aussedatlo/ghostfolio-api 'Percentage of issues still open')
 [![GitHub license](https://img.shields.io/github/license/aussedatlo/ghostfolio-api.svg)](https://github.com/aussedatlo/ghostfolio-api/blob/master/LICENSE.md)
