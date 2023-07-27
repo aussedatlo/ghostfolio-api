@@ -56,8 +56,8 @@ yarn test    # to be implemented
 ## :wave: Contributions & Pull Requests
 
 Contributions are encouraged, I will review any incoming pull requests.
-Be sur to run `yarn test` to run all tests, `yarn lint` to run eslint and `yarn prettier` to run the prettier.
+Be sure to run `yarn test` to run all tests, `yarn lint` to run eslint and `yarn prettier` to run the prettier.
 
-## :warning: Disclamer
+## :warning: Disclaimer
 
 This is an unofficial NodeJS API wrapper for the Ghostfolio application, use at your own risk.
