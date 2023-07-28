@@ -1,6 +1,6 @@
 {
   "name": "ghostfolio-api",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "nodejs api for ghostfolio",
   "repository": "github.com/aussedatlo/ghostfolio-api",
   "author": "aussedatlo",
