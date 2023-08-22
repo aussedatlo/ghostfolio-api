@@ -1,5 +1,10 @@
 import axios, { AxiosResponse } from 'axios';
-import { AuthResponseData, GhostfolioApi, ImportRequestBody } from './types';
+import {
+  Activities,
+  AuthResponseData,
+  GhostfolioApi,
+  ImportRequestBody,
+} from './types';
 
 const ghostfolioApi: GhostfolioApi = (
   accessToken: string,
@@ -37,7 +42,22 @@ const ghostfolioApi: GhostfolioApi = (
     });
   };
 
-  return { importData };
+  const order = async (): Promise<Activities> => {
+    const url = `http://${host}:${port}/api/v1/order`;
+
+    if (!bearerToken) bearerToken = await _getBearerToken();
+
+    return (
+      await axios.get(url, {
+        headers: {
+          Authorization: `Bearer ${bearerToken}`,
+          'Content-Type': 'application/json',
+        },
+      })
+    ).data;
+  };
+
+  return { importData, order };
 };
 
 export default ghostfolioApi;

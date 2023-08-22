@@ -20,4 +20,5 @@ const requestBody: ImportRequestBody = {
 
 (async () => {
   console.log(await ghost.importData(requestBody));
+  console.log(await ghost.order());
 })();
